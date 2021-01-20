@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/sayhello.dir/useHello.cpp.o  -o sayhello  -Wl,-rpath,/home/lily/shenlan/ch0/Cmake_Practice/cmake_homework/build/include include/libhello.so 

@@ -1,0 +1,9 @@
+
+aux_source_directory(. DIR_SRCS)
+
+SET(LIBHELLO_SRC hello.cpp)
+ADD_LIBRARY(hello SHARED ${LIBHELLO_SRC})
+INCLUDE_DIRECTORIES(../include)
+
+INSTALL(TARGETS hello   LIBRARY DESTINATION lib)
+
