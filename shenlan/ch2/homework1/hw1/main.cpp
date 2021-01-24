@@ -20,6 +20,8 @@ int main(int argc, char **argv) {
     {
         cout<<"use A.inverse * B="<<matrix_A.inverse()*matrix_B<<endl;
         cout<<"use QR:"<<matrix_A.colPivHouseholderQr().solve(matrix_B)<<endl;
+        cout<<"use colleskey"<<(matrix_A.transpose()*matrix_A).llt().solve(matrix_A.transpose()*matrix_B);
+        
     }
     
     return 0;
